@@ -268,7 +268,8 @@ body {
   -o-transform: translateY(-100vh);
 }
 
-#mobile_nav  a{
+#mobile_nav li a {
+  display: block;
   padding: 14px 4px;
   font-size: 1rem;
   border-bottom: 1px solid var(--border-soft);
