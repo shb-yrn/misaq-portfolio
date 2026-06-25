@@ -1,0 +1,45 @@
+@media (max-width: 980px) {
+  .row_hero_section{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero_about_me{
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .hero_quickfacts{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 870px) {
+  #menu_icon{
+    display: none;
+  }
+}
+
+@media (max-width: 870px){
+  .nav_links{
+    display: none;
+  }
+  .nav_link_btn{
+    display: none;
+  }
+  #menu_icon{
+    display: block;
+  }
+  .hero_picture{
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .img_hero_picture{
+    width: 220px;
+    height: 220px;
+  }
+}
