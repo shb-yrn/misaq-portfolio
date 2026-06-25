@@ -12,7 +12,7 @@ body {
 }
 
 #bg_disabled {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: var(--color-080c168c);
   z-index: 10;
