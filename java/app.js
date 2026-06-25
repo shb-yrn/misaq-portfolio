@@ -17,7 +17,7 @@ function openMobileNav(){
 function closeMobileNav(){
   mobile_nav.style.transform = "translateY(-100vh)";
   mobile_nav.style.opacity = 0;
-  header.classList.remove("scrolled");
+  header.classList.toggle('scrolled', window.scrollY > 20);
 }
 
 function openBgDisabled(){
