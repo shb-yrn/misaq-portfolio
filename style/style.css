@@ -489,6 +489,11 @@ body {
 
 /* skills section */
 
+.skills_section_left_backend_header, .skills_section_right_backend_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .skills_section_row {
   display: grid;

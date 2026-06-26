@@ -14,6 +14,13 @@
     width: 100%;
     justify-content: center;
   }
+
+  .skills_section_row {
+    grid-template-columns: 1fr;
+  }
+  .skills_section_row {
+    gap: 23px;
+  }
 }
 
 @media (min-width: 870px) {
@@ -66,9 +73,13 @@
   .hero_quickfacts div:last-child {
     padding: 0 25px;
   }
+
 }
 
 @media (max-width: 480px) {
+  .skills_section_right_skills {
+    display: none;
+  }
   .img_hero_picture{
     width: 220px;
     height: 220px;
