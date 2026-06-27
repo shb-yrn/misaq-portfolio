@@ -116,6 +116,23 @@
 
 }
 
+@media (max-width: 767px) {
+  .services_section_body {
+    grid-template-columns: 1fr;
+  }
+
+  .course_section_body {
+    grid-template-columns: 1fr;
+  }
+  .course_section_body_image div {
+    width: 130px;
+    height: 130px;
+  }
+  .course_section_body {
+    padding: 30px 22px;
+  }
+}
+
 @media (max-width: 480px) {
   .skills_section_right_skills {
     display: none;
@@ -153,8 +170,11 @@
   }
 }
 
-@media (max-width: 767px) {
-  .services_section_body {
-    grid-template-columns: 1fr;
+@media (max-width: 410px) {
+  .course_section_body_details_action {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    gap: 10px;
   }
 }
