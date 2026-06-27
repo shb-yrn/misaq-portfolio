@@ -363,7 +363,6 @@ body {
 
 .sections_main {
   width: 100%;
-  min-height: 100vh;
   color: #fff;
   padding: calc(var(--nav-height) + 48px) 0 64px;
 }
@@ -649,5 +648,127 @@ body {
   }
 }
 
-
 /* skills section */
+
+/* certificate section */
+
+.certificate_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  width: 100%;
+  max-width: 1060px;
+}
+
+.cer_card{
+  background: var(--color-0F1729);
+  border:1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  -webkit-transition: border-color 0.3s ease, transform 0.3s ease;
+  -moz-transition: border-color 0.3s ease, transform 0.3s ease;
+  -ms-transition: border-color 0.3s ease, transform 0.3s ease;
+  -o-transition: border-color 0.3s ease, transform 0.3s ease;
+  &:hover{
+    border: 1px solid var(--border-glow);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+}
+
+.cer_badges{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.cer_badges span:first-child{
+  font-size: 12px;
+  font-weight: 600;
+  color: #8fa3c8;
+  background: #638cff14;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 5px 12px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.cer_badges span:last-child{
+  font-size: 11px;
+  font-weight: 600;
+  color: #6fd89f;
+  background: #6fd89f1a;
+  border: 1px solid #6fd89f40;
+  border-radius: 20px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.cer_badges span:last-child::before{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6fd89f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cel_heading{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: #eaf0ff;
+  line-height: 1.6;
+  min-height: 50px;
+}
+
+.cer_footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dashed var(--border-soft);
+  padding-top: 12px;
+}
+.cer_footer span{
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+.cer_footer button{
+  font-family: vazirmatn;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-4F8EFF);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+.cer_footer button:hover , .cer_footer button:hover svg{
+  color: #eaf0ff;
+  fill: #eaf0ff;
+}
+
+.cer_footer button svg{
+  fill: var(--color-4F8EFF);
+}
+
+/* certificate section */

@@ -64,6 +64,9 @@
   #menu_icon{
     display: none;
   }
+  .menu {
+    display: none;
+  }
 }
 
 @media (max-width: 870px){
