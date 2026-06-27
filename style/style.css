@@ -155,7 +155,7 @@ body {
   --nav-height: 76px;
 
   --fs-display: clamp(2.2rem, 5.4vw, 4.2rem);
-  --fs-h2: clamp(1.8rem, 3.6vw, 2.7rem);
+  --fs-h2: clamp(2rem, 3.6vw, 2.7rem);
   --fs-paragraph: clamp(0.9rem, 2vw, 1rem);;
 
   --shadow-glow: 0 0 60px rgba(79,142,255,.18);
@@ -640,7 +640,7 @@ body {
 .skills_section_right > p {
   max-width: 46ch;
   color: var(--color-B5C0DA);
-  font-size: 1.02rem;
+  font-size: var(--fs-paragraph);
 }
 .skills_section_right_skills, .skills_section_left_skills {
   display: flex;
@@ -694,6 +694,21 @@ body {
 .certificate_container{
   width: 100%;
   max-width: 1060px;
+}
+
+.cer_heading{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.cer_heading h2{
+  font-size: var(--fs-h2);
+}
+.cer_heading h2 span{
+  color: var(--color-8B5CF6);
+}
+.cer_heading p{
+  color: var(--color-B5C0DA);
+  font-size: var(--fs-paragraph);
 }
 
 .cer_cards{
@@ -826,6 +841,7 @@ body {
   color: var(--color-8B5CF6);
 }
 .services_section_header p {
+  font-size: var(--fs-paragraph);
   color: var(--color-text-muted);
   max-width: 56ch;
   margin: 0 auto 2.6rem;
@@ -1031,6 +1047,7 @@ body {
   background: var(--color-gradient-cta);
   color: var(--color-2b1200);
   text-decoration: none;
+  padding: 10px 26px;
 }
 /* course section */
 .all_cer_link {
