@@ -185,9 +185,11 @@ body {
     transition: .3s;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: #3d4f7d;
-    background-clip: content-box;
+@media (hover: hover) {
+  ::-webkit-scrollbar-thumb:hover{
+      background: #3d4f7d;
+      background-clip: content-box;
+  }
 }
 
 ::-webkit-scrollbar-thumb:active{
@@ -302,7 +304,9 @@ body {
   -moz-transition: color .2s ease, background .2s ease;
   -ms-transition: color .2s ease, background .2s ease;
   -o-transition: color .2s ease, background .2s ease;
-  &:hover:not(.nav_links li a.nav_link_active) {
+}
+@media (hover: hover) {
+  .nav_links li a:hover:not(.nav_links li a.nav_link_active){
     color: var(--color-EEF3FB);
     background: var(--color-rgba_255_255_255_04);
   }
@@ -505,7 +509,9 @@ body {
   background: var(--color-ffffff0a);
   border-color: var(--border-soft);
   text-decoration: none;
-  &:hover {
+}
+@media (hover: hover) {
+  .hero_action_certificate_download:hover {
     background: var(--color-ffffff14);
     border-color: var(--border-glow);
   }
@@ -729,14 +735,16 @@ body {
   -moz-transition: border-color 0.3s ease, transform 0.3s ease;
   -ms-transition: border-color 0.3s ease, transform 0.3s ease;
   -o-transition: border-color 0.3s ease, transform 0.3s ease;
-  &:hover{
+}
+@media (hover: hover) {
+  .cer_card:hover{
     border: 1px solid var(--border-glow);
     transform: translateY(-3px);
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
-}
+  }
 }
 
 .cer_badges{
@@ -818,7 +826,9 @@ body {
   align-items: center;
   gap: 4px;
   padding: 0;
-  &:hover , &:hover svg{
+}
+@media (hover: hover) {
+  .cer_footer button:hover , .cer_footer button:hover svg{
     color: #eaf0ff;
     fill: #eaf0ff;
   }
@@ -871,7 +881,9 @@ body {
   -moz-transition: border-color .3s ease, box-shadow .3s ease, transform 0.3s ease;
   -ms-transition: border-color .3s ease, box-shadow .3s ease, transform 0.3s ease;
   -o-transition: border-color .3s ease, box-shadow .3s ease, transform 0.3s ease;
-  &:hover {
+}
+@media (hover: hover) {
+  .services_section_body_service:hover {
     border-color: var(--border-glow);
     box-shadow: var(--shadow-glow);
     transform: translateY(-3px);
@@ -880,11 +892,13 @@ body {
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
   }
-  &:hover .btn_services {
+  .services_section_body_service:hover .btn_services {
     /* background: var(--color-gradient-135deg-4F8EFF-0-7C5CFF-50-3DE2FF-100); */
     background: var(--color-gradient--90deg-2F8CFF-0-8B5CF6-100);
   }
+  
 }
+
 .services_section_body_service h3 {
   font-size: 1.2rem;
   margin: 0 0 .5rem;
@@ -1069,7 +1083,9 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   transition: border-color 0.25s ease, color 0.25s ease;
-  &:hover{
+}
+@media (hover: hover) {
+  .all_cer_link a:hover{
     border: 1px solid var(--border-glow);
     color: var(--color-fff);
   }
