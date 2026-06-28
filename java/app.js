@@ -154,3 +154,46 @@ overlay.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
+
+
+const navLinks = document.querySelectorAll('.nav_links li a');
+const sections = document.querySelectorAll('main > section');
+let isClickingNav = false;
+
+function moveActiveNav(targetId) {
+  navLinks.forEach((link) => {
+    link.classList.toggle('nav_link_active', link.dataset.target === targetId);
+  });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    moveActiveNav(e.target.dataset.target);
+
+    isClickingNav = true;
+
+    clearTimeout(window._scrollTomeout);
+    window._scrollTimeout = setTimeout(() => {
+      isClickingNav = false;
+    }, 700);
+  });
+});
+
+
+const observerNav = new IntersectionObserver((entries) => {
+  if (isClickingNav) return;
+
+  entries.forEach((enter) => {
+    if (enter.isIntersecting) {
+      moveActiveNav(enter.target.id);
+    }
+  });
+}, {
+  root: null,
+  rootMargin: '-50% 0px -50% 0px',
+  threshold: 0
+});
+
+sections.forEach((section) => observerNav.observe(section));
+
+

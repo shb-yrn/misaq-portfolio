@@ -76,6 +76,9 @@
   .social_media_footer{
     display: none;
   }
+  .contact_us_form {
+    padding: 30px 22px;
+  }
 }
 
 @media (max-width: 900px) {

@@ -1566,7 +1566,7 @@ main{
   background: var(--color-0F1729);
   border: 1px solid var(--border-soft);
   border-radius: 16px;
-  padding: 40px;
+  padding: 36px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
