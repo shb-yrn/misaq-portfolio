@@ -4,6 +4,7 @@ const header = document.getElementById('header');
 const menu_icon = document.getElementById("menu_icon");
 const close_icon = document.getElementById("close_icon");
 const mobile_nav = document.getElementById("mobile_nav_container");
+const mobileNavLinks = document.querySelectorAll('#mobile_nav li a')
 
 const bgDisabled = document.getElementById("bg_disabled");
 
@@ -62,6 +63,13 @@ function toggleMenuIcons() {
 }
 menu_icon.addEventListener('click', toggleMenuIcons);
 close_icon.addEventListener('click', toggleMenuIcons);
+
+mobileNavLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    closeMobileNav();
+    closeBgDisabled();
+  })
+});
 
 
 const overlay = document.getElementById('modalOverlay');
