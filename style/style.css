@@ -1120,8 +1120,38 @@ main{
 
 /* certificate section */
 
-
 /* srvices section */
+
+.services_section_body_single {
+  grid-template-columns: 1fr;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.services_section_body.services_section_body_single {
+  grid-template-columns: 1fr;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.services_section_body_single .services_section_body_service {
+  position: relative;
+  border: 2px solid var(--color-4F8EFF);
+  background: linear-gradient(180deg, rgba(79,142,255,.08), var(--color-0F1729) 55%);
+  padding: 40px 34px;
+}
+
+.services_section_body_single .services_section_body_service_badge {
+  position: absolute;
+  top: -13px;
+  right: 30px;
+  background: var(--color-gradient--90deg-2F8CFF-0-8B5CF6-100);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+  padding: 5px 16px;
+  border-radius: 9999px;
+}
 
 .services_section_header h2 {
   font-size: var(--fs-h2);
