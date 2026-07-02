@@ -319,7 +319,7 @@ const cer_infos = [
     title: "React.js: Building an Interface",
     platform: "دانشگاهی",
     year: "Dec 2022",
-    desc: "آموزش ساخت رابط کاربری با React.js، شامل کامپوننت‌بندی، مدیریت state و الگوهای رایج توسعه فرانت‌اند.",
+    desc: "آموزش ساخت رابط کاربری با React.js، شامل کامپوننت‌ بندی، مدیریت state و الگوهای رایج توسعه فرانت‌اند.",
     url: "https://www.linkedin.com/learning/certificates/81f6d44bdc2a1fa511f4215411fa46ed516bf2fbdd5abf78f3c8cf4f0c3fdac5",
     imgUrl: "images/certificate/React_js_Building_an_Interface.jpeg"
   },
@@ -327,39 +327,47 @@ const cer_infos = [
     title: "React.js Essential Training",
     platform: "فنی",
     year: "Des 2022",
-    desc: "آشنایی با مفاهیم پایه React.js و اصول طراحی کامپوننت‌محور برای توسعه اپلیکیشن‌های وب.",
+    desc: "آشنایی با مفاهیم پایه React.js و اصول طراحی کامپوننت‌ محور برای توسعه اپلیکیشن‌های وب.",
     url: "https://www.linkedin.com/learning/certificates/b00ad03571b05eac2cb85d033dbc5f348d44f53f462db1af710bf6b91c519ead",
     imgUrl: "images/certificate/React_js_Essential_Training.png"
   },
   {
     title: "C# and .NET Essential Training",
-    platform: "لورم",
+    platform: "LinkedIn",
     year: "Feb 2023",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, cum!",
+    desc: "دوره پایه و اساسی برای یادگیری زبان برنامه‌نویسی #C و فریم‌ورک .NET",
     url: "#",
     imgUrl: "images/certificate/C_and_NET_Essential_Training.jpeg"
   },
   {
     title: "React: Accessibility",
-    platform: "لورم",
+    platform: "LinkedIn",
     year: "Dec 2022",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, cum!",
+    desc: "آموزش تکنیک‌های دسترس‌پذیری (Accessibility) در توسعه اپلیکیشن‌های React برای ساخت رابط‌های کاربری قابل استفاده برای همه",
     url: "#",
     imgUrl: "images/certificate/React_Accessibility.jpeg"
   },
   {
     title: "Building React and Django Apps",
-    platform: "لورم",
+    platform: "LinkedIn",
     year: "Jan 2023",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, cum!",
+    desc: "دوره‌ای برای یادگیری ساخت اپلیکیشن‌های full-stack با استفاده از React در سمت فرانت‌اند و Django در سمت بک‌اند",
     url: "#",
     imgUrl: "images/certificate/Building_React_and_Django_Apps.jpeg"
+  },
+  {
+    title: "React Hooks",
+    platform: "LinkedIn",
+    year: "Jan 2023",
+    desc: "دوره‌ای تخصصی درباره React Hooks، شامل نحوه استفاده از هوک‌های استاندارد و ساخت هوک‌های سفارشی برای مدیریت state و lifecycle در کامپوننت‌های تابعی React",
+    url: "#",
+    imgUrl: "images/certificate/React Hooks.jpeg"
   },
   {
     title: "SCRUM",
     platform: "لورم",
     year: "زمستان 1400",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, cum!",
+    desc: "دوره آموزشی درباره متدولوژی Scrum و اصول مدیریت پروژه‌های چابک (Agile)",
     url: "#",
     imgUrl: "images/certificate/scrum.jpg"
   }
