@@ -772,7 +772,11 @@ main{
   border: 1px solid var(--border-soft);
   border-radius: 20px;
   padding: 26px;
-  transition: border-color .3s ease, transform .3s ease;
+  transition: border-color .3s ease;
+  -webkit-transition: border-color .3s ease;
+  -moz-transition: border-color .3s ease;
+  -ms-transition: border-color .3s ease;
+  -o-transition: border-color .3s ease;
 }
 @media (hover: hover) {
   .proj_card:hover {
@@ -1184,15 +1188,19 @@ main{
   width: 90%;
   padding: 28px;
   position: relative;
-  transform: scale(0.92);
   opacity: 0;
-  transition: transform 0.28s ease, opacity 0.28s ease;
   max-height: 85vh;
   overflow-y: auto;
+  transform: scale(0.92);
   -webkit-transform: scale(0.92);
   -moz-transform: scale(0.92);
   -ms-transform: scale(0.92);
   -o-transform: scale(0.92);
+  transition: opacity 0.28s ease;
+  -webkit-transition: opacity 0.28s ease;
+  -moz-transition: opacity 0.28s ease;
+  -ms-transition: opacity 0.28s ease;
+  -o-transition: opacity 0.28s ease;
 }
 
 .modal_overlay.active .modal_box {
@@ -1508,7 +1516,6 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -1520,7 +1527,11 @@ main{
   border: 1px solid var(--border-soft);
   padding: 32px 26px;
   border-radius: 24px;
-  transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+  transition: border-color .3s ease, box-shadow .3s ease;
+  -webkit-transition: border-color .3s ease, box-shadow .3s ease;
+  -moz-transition: border-color .3s ease, box-shadow .3s ease;
+  -ms-transition: border-color .3s ease, box-shadow .3s ease;
+  -o-transition: border-color .3s ease, box-shadow .3s ease;
 }
 @media (hover: hover) {
   .jira_plan_card:hover {
@@ -1532,18 +1543,6 @@ main{
 .jira_plan_featured {
   border: 2px solid var(--color-4F8EFF);
   background: linear-gradient(180deg, rgba(79,142,255,.08), var(--color-0F1729) 55%);
-}
-
-.jira_plan_badge {
-  position: absolute;
-  top: -13px;
-  right: 26px;
-  background: var(--color-gradient--90deg-2F8CFF-0-8B5CF6-100);
-  color: #fff;
-  font-size: .72rem;
-  font-weight: 700;
-  padding: 5px 16px;
-  border-radius: 9999px;
 }
 
 .jira_plan_card h3 {
@@ -1869,7 +1868,11 @@ main{
   border: 1px solid var(--border-soft);
   padding: 32px 26px;
   border-radius: 24px;
-  transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+  transition: border-color .3s ease, box-shadow .3s ease;
+  -webkit-transition: border-color .3s ease, box-shadow .3s ease;
+  -moz-transition: border-color .3s ease, box-shadow .3s ease;
+  -ms-transition: border-color .3s ease, box-shadow .3s ease;
+  -o-transition: border-color .3s ease, box-shadow .3s ease;
 }
 @media (hover: hover) {
   .course_card:hover {
